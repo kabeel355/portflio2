@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolby</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<link rel="icon"
+    href="data:image/jpeg;base64,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">
+
+<body>
+
+
+
+
+
+    <nav>
+        <span class="logo"> <a href="#" id="bol">Bolby</a></span>
+        <ul class="list">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contant</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="first">
+        <img src="WhatsApp Image 2024-07-19 at 13.19.04_93890db3.jpg" id="pers">
+        <h1 id="doe">Mohamed kabeel </h1>
+        <p id="ui">Web Developer</p>
+
+
+        <a href="https://www.instagram.com/mo7amed_kabeel?igsh=eHVqaXN2a2JmdTJ4" target="_blank" id="img2">
+            <img src="instagram (1).png">
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100017918798810&mibextid=ZbWKwL" target="_blank" id="img4">
+            <img src="facebook (1).png">
+            <a href="https://twitter.com/kab99762?t=ShSw-vjLZ_igWC7XcU1jXA&s=09" target="_blank" id="img3">
+                <img src="twitter (1).png">
+            </a>
+
+
+            <button id="hire">Hire me</button>
+
+            <p id="Scroll">Scroll Down </p>
+            <img src="down-arrows.png" id="down">
+    </div>
+
+
+    <div id="second">
+        <h2 id="about">About Me</h2>
+        <img src="second.jpg" id="person">
+        <div class="paragraph">
+            <p>I am Mohamed Kabeel , I a web Developer ,I am 17 <br>I am in grade 11, My hoppies are playing football
+                <br>,swimming,paying chess
+            </p>
+
+            <button id="cv">Download CV</button>
+        </div>
+
+        <div class="prgrassone">
+            <p id="deve">Develoment</p>
+            <div id="barone"></div>
+            <div id="yellow"> 85%</div>
+        </div>
+
+
+
+        <div class="prgrass2">
+            <p id="des">Ui\Ux design</p>
+            <div id="bar2"></div>
+            <div id="red">95%</div>
+        </div>
+
+        <div class="prgrass3">
+            <p>photography</p>
+            <div id="bar3"></div>
+            <div id="blue">70%</div>
+        </div>
+
+        <div class="react">
+            <img src="like.png" id="like">
+            <p id="com">Project Completed</p>
+            <p id="num">198</p>
+        </div>
+
+        <div class="cofe">
+            <img src="coffee-cup.png" id="cub">
+            <p id="of">cub of coffee</p>
+            <p id="off">5670</p>
+        </div>
+
+        <divc class="clients">
+            <img src="customer.png" id="customer">
+            <p id="persons">clientes</p>
+            <p id="no">427</p>
+    </div>
+
+
+    <div class="cham">
+        <img src="medal.png" id="medal">
+        <p id="nam">Namionees winner</p>
+        <p id="win">35</p>
+    </div>
+    </div>
+
+
+    <div class="third">
+        <h2 id="ser">Services</h2>
+
+        <div class="part1">
+            <img src="space.png" id="space">
+            <p id="desi">Ui\Ux Design</p>
+            <p id="lor">Lorem ipsum dollor sit amota <br> consuctetuber adipiscing elit <br> adeasen commodo ligule ager
+            </p>
+        </div>
+
+
+        <div class="part2">
+            <img src="coding.png" id="code">
+            <p id="web">Web Development</p>
+            <p id="lore">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Incidunt, tempora eligendi? </p>
+        </div>
+
+
+        <div class="part3">
+            <img src="camera.png" id="camera">
+            <p id="photo">Photography</p>
+            <p id="lorem">Lorem ipsum dolor sit, <br>amet consectetur adipisicing <br> Soluta minima ex mollitia aut!
+            </p>
+        </div>
+
+
+        <p id="look">looking for a costume jon? <a href="#" id="click">click here</a>to costume me </p>
+        <img src="smile.png" id="smile">
+    </div>
+
+
+    <div class="fourth">
+        <h2 id="exe">Exeperince</h2>
+        <div class="mo">
+            <p id="preseme"> 2019-preseme</p>
+            <p id="aca">Acadimc Degree</p>
+            <p id="ace">Lorem ipsum dolor sit amet consectetur adipisicing <br> Aspernatur tenetur ullam ad adipisci</p>
+            <p id="hes">2017-2013</p>
+            <p id="bac">Bachelor's Degree</p>
+            <p id="ha">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Consequatur optio assumenda porro
+            </p>
+            <p id="he">2013-2009</p>
+            <p id="hon">Honours Degree</p>
+            <p id="is">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Consequatur optio assumenda porro
+            </p>
+        </div>
+
+        <div class="me">
+            <p id="aaa"> 2019-preseme</p>
+            <p id="bbb">Web Designer</p>
+            <p id="ccc">Lorem ipsum dolor sit amet consectetur adipisicing <br> Aspernatur tenetur ullam ad adipisci</p>
+            <p id="ddd">2017-2013</p>
+            <p id="eee">Front-End Developer </p>
+            <p id="fff">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Consequatur optio assumenda porro
+            </p>
+            <p id="ggg">2013-2009</p>
+            <p id="hhh">Back-End Developer</p>
+            <p id="iii">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Consequatur optio assumenda porro
+            </p>
+        </div>
+
+
+    </div>
+
+
+    <div class="fifth">
+        <h2 id="rec">Recent Work</h2>
+        <div class="hh">
+            <a href="#" id="aa">Everything</a>
+
+            <a href="#" id="av">Art</a>
+            <a href="#" id="an">Brading</a>
+            <a href="#" id="al">Creative</a>
+            <a href="#" id="ap">Desigen</a>
+        </div>
+
+
+        <div id="imgg1">
+            <img src="responsive.png" id="resp">
+        </div>
+
+        <div id="imgg2">
+            <img src="video-games.png" id="vid">
+        </div>
+
+        <div id="imgg3">
+            <img src="technology.png" id="tec">
+        </div>
+
+        <div id="imgg4">
+            <img src="swimming.png" id="swm">
+        </div>
+
+        <div id="imgg5">
+            <img src="soccer-player.png" id="ply">
+        </div>
+
+        <div id="imgg6">
+            <img src="coding (1).png" id="cd">
+        </div>
+
+    </div>
+
+
+    <div class="six">
+        <h2 id="ge">Get In Touch</h2>
+        <p id="evr">Let's Talk About Everything!</p>
+        <p id="do">Don't Like Forms?Send me an <a href="#" id="em">email</a>.</p>
+        <img src="smile.png" id="smm">
+
+        <div class="put">
+            <input type="text" placeholder="Your name" id="tex">
+            <input type="email" placeholder="Email address" id="emm">
+            <input type="text" placeholder="Subject" id="tet">
+            <input type="text" placeholder="Massage" id="ext">
+
+            <BUtton id="se">Send Massage</BUtton>
+        </div>
+
+
+</body>
+
+</html>
